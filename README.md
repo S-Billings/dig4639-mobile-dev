@@ -7,3 +7,4 @@ The *ice* folder contains in-class exercises.
 ## About Me
 My name is Samantha and I love felines. I enjoy spending my time sleeping but I have a 830 am class.
 Here is a link to my website [link](https://www.samantha-billings.com)
+Some positions I would be interested in working in are content creator, front end developer, and LAMPS stack developer.
