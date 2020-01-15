@@ -1,7 +1,8 @@
 console.log("Hello World");
 console.log("Can I have some sleep please??");
 var x = 100;
-var y = 100
+var y = [1];
+
 
 function scopeDemo(y1) {
     console.log(x)
@@ -10,11 +11,14 @@ function scopeDemo(y1) {
     console.log(b);
     console.log(c);
     console.log(y1);
+    y1[0]=500;
     var x = 2;
     if(true) {
         var x = 0;
     }
     return a;
 }
-console.log(scopeDemo(y) + 10);
+// console.log(scopeDemo(y) + 10);
 console.log(y);
+console.log(0);
+x=scopeDemo(y1);
