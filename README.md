@@ -15,4 +15,4 @@ Here is a change (issue #3)
 
 ## A sentance that we're using
 
-This is a change in the work that we're doing 1/22/2020
+This is a change in the work that we're doing 1/22/2020.
