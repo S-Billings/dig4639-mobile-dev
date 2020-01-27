@@ -1,0 +1,32 @@
+body{
+    padding: 40px;
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 100%;
+}
+
+h1{
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    font-size: 72px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p{
+    color: #263030;
+    margin: 2em 2em; 
+    font-weight: bolder;
+    background-color:rgba(198, 201, 207, .5);
+    padding: 5px;
+    font-size: 18px;
+}
+
+ArticleAuthor{
+    color: white;
+    font-size: 22px;
+    margin: 5px;
+    padding: 2px;
+
+}
