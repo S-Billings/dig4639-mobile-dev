@@ -12,7 +12,7 @@ class Adder {
    }
 
     render(){
-    let phrase = `<p>The sum of ${this.a} and ${this.b} is ${this.sum()} </p>`;
+    let phrase = `The sum of ${this.a} and ${this.b} is ${this.sum()} `;
       console.log(phrase);  
     }
 }
