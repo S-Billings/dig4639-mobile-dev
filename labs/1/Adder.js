@@ -2,20 +2,20 @@ class Adder {
     // sum( a + b);
     
 
-    constructor(props){
+    constructor(a,b){
         this.a = a;
         this.b = b;
     }
     //to return the sum of a + b
-    sum(a, b){
-        return sum;
-        // console.log(sum);
-    }
+    sum(a,b) {
+       return (this.a + this.b);
+   }
 
     render(){
-        
+    let phrase = `<p>The sum of ${this.a} and ${this.b} is ${this.sum()} </p>`;
+      console.log(phrase);  
     }
 }
 
 
-module.exports(Adder.js);
+module.exports = Adder;
