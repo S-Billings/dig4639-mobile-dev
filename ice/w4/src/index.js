@@ -1,4 +1,5 @@
 import Component from "./Component.js";
+// hold control and hover over file path 
 function runOnLoad()
 {
     
