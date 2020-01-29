@@ -1,11 +1,19 @@
 class Adder {
     // sum( a + b);
+    
+
     constructor(props){
-        this.props = props;
+        this.a = a;
+        this.b = b;
     }
     //to return the sum of a + b
-    sum(){
+    sum(a, b){
+        return sum;
+        // console.log(sum);
+    }
 
+    render(){
+        
     }
 }
 
