@@ -9,10 +9,9 @@ class Adder {
     //to return the sum of a + b
     sum(a,b) {
        return (this.a + this.b);
-   }
 
     render(){
-    let phrase = `The sum of ${this.a} and ${this.b} is ${this.sum()} `;
+    let phrase = `<p>The sum of ${this.a} and ${this.b} is ${this.sum()} </p>`;
       console.log(phrase);  
     }
 }
