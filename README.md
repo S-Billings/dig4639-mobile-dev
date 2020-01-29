@@ -18,4 +18,12 @@ Here is a change (issue #3)
 This is a change in the work that we're doing 1/22/2020.
 This should be replaced.
 
+## Merging
+ 1. Item 1 [Google](http://www.google.com)
+ 1. Item 2
+ 1. Item 3
 This is the change.
+
+## Conflicts
+
+This section represents code on the server that isn't on the local repository.
