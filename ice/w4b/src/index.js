@@ -3,10 +3,12 @@ import Component from "./Component.js";
 import Task from "./Task.js";
 function runOnLoad()
 {
-    
+    //container
     let element = document.createElement("div");
     element.id = "Test";
     document.body.appendChild(element);
+
+    //handle adding a new task
     // console.log(x);
     var comp = new Component(document.getElementById("addTask"));
     let element2 = document.createElement("div");
