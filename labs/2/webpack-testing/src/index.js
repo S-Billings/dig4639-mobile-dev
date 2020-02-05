@@ -1,7 +1,6 @@
 // Import correct component
-import { Element } from "Element.js";
+import Card from "./component/card/index.js";
 
-let Card; 
 // This creates a reference to the Card Class
 
 function runOnLoad(){
