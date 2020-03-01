@@ -28,7 +28,7 @@ class CardList extends React.Component{
 
         if (titleElement.value.length !== 0 && contentElement.value.length !== 0) {
             let newTask = {
-                title = titleElement.value, 
+                title: titleElement.value, 
                 content: contentElement.value
             };
             
@@ -37,7 +37,7 @@ class CardList extends React.Component{
 
             let localCards = this.state.cards; 
 
-            localCards.push.newTask;
+            localCards.push(newTask);
 
             this.setState({cards: localCards});
 
