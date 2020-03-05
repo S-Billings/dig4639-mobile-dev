@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../Card";
 import CardInput from "../CardInput";
-import data from "../data.json";
+import data from "../../data.json";
 
 class CardList extends React.Component{
     constructor(props){
