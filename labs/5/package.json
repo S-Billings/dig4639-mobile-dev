@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "create-react-app": "^3.4.1",
-    "react-native": "^0.62.0"
+    "react-native": "^0.62.0",
+    "react-native-elements": "^1.2.7"
   }
 }

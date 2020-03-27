@@ -9,7 +9,7 @@ class Weather extends React.Component{
             periods:[]
         };
     }
-    componetWorks(){
+    componetDidMount(){
         fetch("https://api.weather.gov/gridpoints/MLB/25,69/forecast").then(res=>res.json()).then((result)=>{
             let periods = result.props.periods;
             
@@ -28,6 +28,7 @@ class Weather extends React.Component{
                     <Text>
                         Temperature{value.temperature}{value.temperatureUnit}
                     </Text>
+                    <Text>{value.detailedForecast}</Text>
 
 
                 </View>;
