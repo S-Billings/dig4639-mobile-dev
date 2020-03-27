@@ -9,7 +9,7 @@ class Card extends React.Component {
     {this.props.temperature}
         {this.props.temperatureUnit}
         <p>
-          {this.props.details}
+          {this.props.detailedForecast}
         </p>
 
     </div>
