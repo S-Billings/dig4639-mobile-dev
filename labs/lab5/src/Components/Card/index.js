@@ -1,5 +1,6 @@
 import React from "react";
 import "./card.css";
+import Weather from "../Weather/index.js";
 
 class Card extends React.Component {
   render() {

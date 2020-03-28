@@ -1,5 +1,6 @@
-import React from "./node_modules/react";
+import React from "react";
 import {View, Text} from "react-native";
+import "./index.css";
 
 class Weather extends React.Component{
     constructor(props){
