@@ -35,8 +35,8 @@ export default function HomeScreen() {
         <View style={styles.welcomeContaine}>
 
 
-          {contact.map((contact, i)=>
           <ScrollView>
+          {contact.map((contact, i)=>
           <Card key={i} title={contact.name}/>
           )}
           </ScrollView>
