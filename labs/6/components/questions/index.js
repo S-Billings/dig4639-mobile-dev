@@ -1,11 +1,24 @@
 import React, { Component } from "react";
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { Button, FlatList, StyleSheet, Text, View } from 'react-native';
 
 class FlatListQuestions extends Component{
-    userPoints=0;
+    state = {userPoints:0};
+    //defining questions as a data structure
+    questions=[
+        [{text:"q1"}, {text:"q2", correct:true}, {text:"q3"}],
+        [{text:"q1",correct:true}, {text:"q2"}, {text:"q3"}],
+        [{text:"q1"}, {text:"q2", correct:true}, {text:"q3"}],
+    ]
     render(){
         return(
             <View style={styles.container}>
+                {/* mapping questions to create their respective buttons */}
+                {this.questions[0].map((q)=>
+                    <Button title={q.text}
+                    onPress = {(q.correct && this.setState({userPoints:userPoints+1}))} />
+                )}
+            </View>);
+            /*
                 data={[
                     {key: "Are you enjoying yourself yet??"}, 
                     <Button
@@ -99,7 +112,7 @@ class FlatListQuestions extends Component{
                     ({item,index})=> <Text style={styles.item}>{index+1}.{item.key}</Text>
                 }
             </View>
-        );
+        );*/
     }
 }
 
@@ -108,16 +121,16 @@ const styles = StyleSheet.create({
         padding: 5 ,
         margin: 10,
         border: 10.5 ,
-        borderStyle: hidden,
-        backgroundColor: rgb(106, 90, 205),
+        borderStyle: 'hidden',
+        backgroundColor: 'rgb(106, 90, 205)',
 
     },
 
     item:{
         padding: 5,
-        fontStyle: monospace,
-        fontFamily: Courier,
-        color: rgb(255,255,240),
+        fontStyle: 'monospace',
+        fontFamily: 'Courier',
+        color: 'rgb(255,255,240)',
 
     }
 })
