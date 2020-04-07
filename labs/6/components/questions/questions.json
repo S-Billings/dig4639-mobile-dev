@@ -1,0 +1,119 @@
+[
+    
+    {
+        "question": "In what year was Biggie Smalls murdered?",
+        "answerOptions":[
+            {
+                "text":"1998",
+                "correct": false
+            },
+            {
+                "text":"1997",
+                "correct": true
+            },
+            {
+                "text":"1990",
+                "correct":false
+            },
+            {
+                "text":"He's living in hiding",
+                "correct":false
+            }
+        ]
+
+    },
+  
+    {
+        "question":"Finish the quote: 'Road Work ahead...'",
+        "answerOptions":[
+            {
+                "text": "Oh, it be like that!",
+                "correct": false
+            },
+
+            {
+                "text": "Uh, yeah, I sure hope it does!",
+                "correct":true
+            },
+            {
+                "text":"Huh, that's interesting!",
+                "correct":false
+
+            },
+            {
+                "text": "Good golly, watch out for that pothole!",
+                "correct": false
+
+            }
+        ]
+    },
+
+
+    {
+        "question": "How many taste buds do cats have?",
+        "answerOptions":[
+            {
+                "text": "9000",
+                "correct": false
+            },
+            {
+                "text": "473",
+                "correct": true
+            },
+            {
+                "text":"285",
+                "correct": false
+            },
+            {
+                "text":"666",
+                "correct":false
+            }
+        ]
+        
+    },
+
+    {
+        "question":"Snoop Dogg rebranded to what name?",
+        "answerOptions":[
+            {
+                "text": "Snoopy the Dogg",
+                "correct": false
+            },
+            {
+                "text": "Snoop Diggity Dogg",
+                "correct": false
+            },
+            {
+                "text": "Snoop Lion" ,
+                "correct": true
+            },
+            {
+                "text": "Snoop Giraffe" ,
+                "correct": false
+            }
+        ]
+    },
+
+    {
+        "question": "When was Vaporwave created?",
+        "answerOptions":[
+            {
+                "text":"2010",
+                "correct": false
+            },
+            {
+                "text":"1990",
+                "correct":false
+            },
+            {
+                "text":"2010",
+                "correct":true
+            },
+            {
+                "text":"2018",
+                "correct":false
+            }
+        ]
+    }
+
+]
