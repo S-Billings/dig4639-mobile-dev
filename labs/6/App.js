@@ -58,7 +58,28 @@ class LandingPage extends React.Component{
       })
     }
   }
-
+  countdown() {
+    console.log("Handling interval")
+    console.log(this.state.counter)
+    if(this.state.counter < this.timeLimit) {
+      this.setState({
+        titleText: 'Starting the Quiz',
+        counter: this.state.counter + 1
+      })
+    } else {
+      this.setState({
+        titleText: "Beginning Quiz!",
+        currentState: QUESTION_STATE,
+        counter: 0
+      })
+    if(this.state.currentState == TITLE_STATE) {
+				this.timer = setInterval(() => this.countdown(), 1000)
+				clearInterval(this.timer)
+			} else {
+				this.setState({titleText: "You answered!"})
+			}
+		}
+}
   start(){
     //prop name: value
     console.log("Booting up")
@@ -76,7 +97,7 @@ class LandingPage extends React.Component{
       currentQuestion: questionNumber, 
       questionIndices: newArray 
     })
-    
+    this.timer = setInterval(()=> this.countdown(), 1000)
 
   }
   
