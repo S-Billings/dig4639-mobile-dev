@@ -44,7 +44,7 @@ class removeContact extends React.Component{
             <div>
                 <h3>Delete Contact</h3>
                 <form onSubmit={this.handleSubmit}>
-                    <label htmlFor="name">Enter name</label>
+                    <label htmlFor="name">Enter position</label>
                     <br/>
                     <input type = "text" ref={this.input} id= "position"/>
                     <br/>

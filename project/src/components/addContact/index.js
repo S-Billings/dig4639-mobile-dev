@@ -13,36 +13,34 @@ class addContact extends React.Component {
   constructor(props) {
     super(props);
 
-    this.input = React.createRef();
-    this.input2 = React.createRef();
+    this.nameInput = React.createRef();
+    this.numberInput = React.createRef();
 
     this.state = {
-      value: '',
-      value2: ''
+      value: " ",
+      value2: " "
     }
   }
 
 
-      newEntry= () => {
+      newEntry = () => {
         let newHeaders = {...HEADERS,
           "method" : "POST",
           body: JSON.stringify({
-            name: this.input.current.value,
-            number:this.input2.current.value
+            name: this.nameInput.current.value,
+            number: this.numberInput.current.value
           })}
           fetch("http://plato.mrl.ai:8080/contacts/add", newHeaders)
           .then((res) => res.json())
           .then((data) => {
-              this.setState({value:this.input.current.value})
-              this.setState({value:this.input2.current.value})
-              console.log(data)
-        }
-        , [])
+              this.setState({value:this.nameInput.current.value})
+              this.setState({value:this.numberInput.current.value})
+        }, [])
       }
 
-  handleSubmit = e => {
-    e.preventDefault();
-    this.newEntry()
+  handleSubmit = b => {
+    b.preventDefault();
+    this.newEntry();
   }
   
 

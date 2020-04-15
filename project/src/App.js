@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import Profile from './components/viewProfile';
+import AddContact from './components/addContact';
+import RemoveContact from './components/removeContact';
+import Contacts from './components/viewContact';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  render(){
+    return(
+      <body>
+        <div class="un">
+          <div class="professional">
+            <Contacts/>
+            <AddContact/>
+            <RemoveContact/>
+            <Profile/>
+
+          </div>
+        </div>
+      </body>
+    );
+  }
 }
 
 export default App;

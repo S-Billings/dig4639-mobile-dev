@@ -25,10 +25,7 @@ class viewContact extends React.Component{
 
                   {
                       this.state.contacts.map((value, index)=> {
-                          return 
-                            <p key={index}>
-                                {value.name}, {value.number}
-                            </p>;
+                          return  <p key={index}> {value.name}, {value.number} </p>;
                       })
                   }
               </div>
