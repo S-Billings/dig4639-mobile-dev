@@ -1,6 +1,6 @@
 body {
   background-color: #a87e7b;
-  border: groove 12px #d1eb3f ;
+  border: inset 12px #d1eb3f ;
   margin: 10px;
   padding: 5px;
 }
@@ -14,6 +14,14 @@ body {
   
 
 }
-.professional{
-  
+.professional input{
+    background-color: #ff0303 ;
+    color: yellow;
+
+}
+.professional button{
+  border-radius: 8px;
+  color:white;
+  background-color: rgba(9, 8, 36, 0.568);
+
 }

@@ -53,10 +53,10 @@ class addContact extends React.Component {
         <form onSubmit={this.handleSubmit}>
   
             <label htmlFor="name">Full Name</label><br/>
-            <input type="text" ref={this.input} id ="name" /><br/>
+            <input type="text" ref={this.nameInput} id ="name" /><br/>
 
             <label htmlFor="name">Number</label><br/>
-            <input type="text" ref={this.input} id ="number" /><br/>
+            <input type="text" ref={this.numberInput} id ="number" /><br/>
 
             <button type="submit">Submit</button>
          </form>
